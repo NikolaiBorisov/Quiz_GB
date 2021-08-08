@@ -72,7 +72,7 @@ final class MainViewMaker {
         mainStackView.snp.makeConstraints {
             $0.leading.equalToSuperview().offset(20)
             $0.trailing.equalToSuperview().offset(-20)
-            $0.top.equalToSuperview().offset(30)
+            $0.top.equalTo(container.view.safeAreaLayoutGuide.snp.top).offset(10)
             $0.bottom.equalToSuperview().offset(-30)
         }
     }
