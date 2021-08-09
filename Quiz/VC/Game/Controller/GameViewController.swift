@@ -35,7 +35,7 @@ final class GameViewController: UIViewController {
     }
     
     private func playMusic() {
-        guard let url = Constants.URL.gameMusicURL else { return }
+        let url = URL.gameMusicURL
         Player.shared.playSoundOn(vc: url)
     }
     

@@ -20,7 +20,7 @@ final class MainViewController: UIViewController {
     }
     
     private func playMusic() {
-    guard let url = Constants.URL.beginningMusicURL else { return }
+        let url = URL.beginningMusicURL
         Player.shared.playSoundOn(vc: url)
     }
     
