@@ -9,6 +9,12 @@ import UIKit
 
 enum Constants {
     
+    enum Keys: String {
+        case result = "result"
+        case game = "game"
+        case questions = "questions"
+    }
+    
     enum Image {
         static let dibrov = UIImage(named: "dibrov")
         static let fiftyFifty = UIImage(named: "fifty")

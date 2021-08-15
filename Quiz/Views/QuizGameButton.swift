@@ -14,6 +14,8 @@ final class QuizGameButton: UIButton {
         case friendCall = "iphone.homebutton.radiowaves.left.and.right"
         case audienceHelp = "person.3.fill"
         case fiftyFifty = "fifty"
+        case sequentially = "arrow.right"
+        case shuffle = "shuffle"
         case none = ""
     }
     

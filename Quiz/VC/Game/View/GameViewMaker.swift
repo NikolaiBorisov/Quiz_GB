@@ -10,7 +10,7 @@ import SnapKit
 
 final class GameViewMaker {
     
-    var buttonsArray: [UIButton] {
+    var answersButtonsArray: [UIButton] {
         return [answer1Button, answer2Button, answer3Button, answer4Button]
     }
     
@@ -136,12 +136,39 @@ final class GameViewMaker {
         return stackView
     }()
     
+    lazy var currentComplitionLabel: UILabel = {
+        let label = QuizLabel()
+        
+        return label
+    }()
+    
+    lazy var currentQuestionNumberLabel: UILabel = {
+        let label = QuizLabel()
+        
+        return label
+    }()
+    
+    lazy var currentProgressStackView: UIStackView = {
+        let stackView = QuizStackView()
+        stackView.axis = .horizontal
+        // спейсинг не работает корректно, если поставить значение 10 в строке 130
+        stackView.spacing = 0
+        [
+            currentQuestionNumberLabel,
+            currentComplitionLabel
+        ]
+        .forEach { stackView.addArrangedSubview($0) }
+        
+        return stackView
+    }()
+    
     lazy var answerButtonMainStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.spacing = 10
         [
+            currentProgressStackView,
             questionLabel,
             answerButtonTopStackView,
             answerButtonBottomStackView
@@ -153,14 +180,14 @@ final class GameViewMaker {
     
     func cnangeBackgroundColorForButton(with index: Int, and percent: Int) {
         let color = UIColor(red: 0, green: (CGFloat(percent) * 2) / 255, blue: 0, alpha: 1)
-        buttonsArray[index].backgroundColor = color
+        answersButtonsArray[index].backgroundColor = color
     }
     
     lazy var mainStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
-        stackView.spacing = 50
+        stackView.spacing = 20
         [
             topStackView,
             answerButtonMainStackView

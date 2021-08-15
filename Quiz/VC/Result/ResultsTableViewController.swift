@@ -49,11 +49,11 @@ final class ResultsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        GameSingleton.shared.results.count
+        Game.shared.results.count
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let item = GameSingleton.shared.results[indexPath.row]
+        let item = Game.shared.results[indexPath.row]
         cell.backgroundColor = .systemIndigo
         (cell as? ResultsTableViewCell)?.configure(with: item)
         (cell as? ResultsTableViewCell)?.cellDelegate = self
@@ -65,9 +65,9 @@ final class ResultsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if case .delete = editingStyle {
-            GameSingleton.shared.results.remove(at: indexPath.row)
+            Game.shared.results.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
-            ResultsCareTaker.delete(row: indexPath.row)
+            ResultsCaretaker.delete(row: indexPath.row)
             tableView.reloadData()
         }
     }
