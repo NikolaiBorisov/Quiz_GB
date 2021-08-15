@@ -12,6 +12,8 @@ final class QuizButton: UIButton {
     enum QuizButtonType: String {
         case Start
         case Results
+        case Settings
+        case AddQuestion = "Add Question"
     }
     
     init(type: QuizButtonType) {
@@ -30,7 +32,7 @@ final class QuizButton: UIButton {
         self.layer.cornerRadius = 10
         self.layer.borderWidth = 2
         self.layer.borderColor = UIColor.white.cgColor
-        self.backgroundColor = .purple
+        self.backgroundColor = .systemPurple
     }
     
 }

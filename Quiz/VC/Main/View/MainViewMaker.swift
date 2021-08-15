@@ -35,11 +35,37 @@ final class MainViewMaker {
         return button
     }()
     
+    lazy var settingsButton: UIButton = {
+        let button = QuizButton(type: .Settings)
+        
+        return button
+    }()
+    
+    lazy var addButton: UIButton = {
+        let button = QuizButton(type: .AddQuestion)
+        
+        return button
+    }()
+    
+    lazy var settingsButtonStackView: UIStackView = {
+        let stackView = QuizStackView()
+        stackView.axis = .horizontal
+        stackView.spacing = 5
+        [
+            settingsButton,
+            addButton
+        ]
+        .forEach {stackView.addArrangedSubview($0) }
+        
+        return stackView
+    }()
+    
     lazy var buttonStackView: UIStackView = {
         let stackView = QuizStackView()
         [
             startButton,
-            resultsButton
+            resultsButton,
+            settingsButtonStackView
         ]
         .forEach {stackView.addArrangedSubview($0) }
         

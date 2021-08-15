@@ -11,7 +11,7 @@
 		FA41D4B726BD01C70077319E /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D4B626BD01C70077319E /* UIViewController+Ext.swift */; };
 		FA41D4BC26BD19A70077319E /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D4BB26BD19A70077319E /* ResultsTableViewCell.swift */; };
 		FA41D4C026BD1C420077319E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D4BF26BD1C420077319E /* Result.swift */; };
-		FA41D4C526BD20EA0077319E /* ResultsCareTaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D4C426BD20EA0077319E /* ResultsCareTaker.swift */; };
+		FA41D4C526BD20EA0077319E /* ResultsCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D4C426BD20EA0077319E /* ResultsCaretaker.swift */; };
 		FA41D4D226BD66E10077319E /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D4D126BD66E10077319E /* GameSession.swift */; };
 		FA44EAE426BB9DA8009502FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44EAE326BB9DA8009502FC /* AppDelegate.swift */; };
 		FA44EAE626BB9DA8009502FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44EAE526BB9DA8009502FC /* SceneDelegate.swift */; };
@@ -28,8 +28,7 @@
 		FA44EB2826BBB0F3009502FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44EB2726BBB0F3009502FC /* Constants.swift */; };
 		FA44EB2D26BBC044009502FC /* QuizGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44EB2C26BBC044009502FC /* QuizGameButton.swift */; };
 		FA44EB3326BBD956009502FC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44EB3226BBD956009502FC /* Question.swift */; };
-		FA44EB3826BBDC52009502FC /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44EB3726BBDC52009502FC /* QuestionViewModel.swift */; };
-		FA44EB3C26BBE1CA009502FC /* GameSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44EB3B26BBE1CA009502FC /* GameSingleton.swift */; };
+		FA44EB3C26BBE1CA009502FC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44EB3B26BBE1CA009502FC /* Game.swift */; };
 		FA44EB4426BBF288009502FC /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44EB4326BBF288009502FC /* ResultsTableViewController.swift */; };
 		FA8CF85126BE92D400319279 /* Кто хочет стать миллионером - Обдумывание.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA8CF85026BE92D400319279 /* Кто хочет стать миллионером - Обдумывание.mp3 */; };
 		FA8CF85426BE933C00319279 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8CF85326BE933C00319279 /* Player.swift */; };
@@ -39,6 +38,15 @@
 		FA8CF86426BFEBD300319279 /* QuizResultLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8CF86326BFEBD300319279 /* QuizResultLabel.swift */; };
 		FA8CF86726BFF3C700319279 /* Кто хочет стать миллионером - начало.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA8CF86626BFF3C700319279 /* Кто хочет стать миллионером - начало.mp3 */; };
 		FA8CF86A26BFF57F00319279 /* Кто хочет стать миллионером - конец.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA8CF86926BFF57F00319279 /* Кто хочет стать миллионером - конец.mp3 */; };
+		FA93FDBC26C11E6900E4310F /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDBB26C11E6900E4310F /* Sequence.swift */; };
+		FA93FDC026C11F3F00E4310F /* SequenceStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDBF26C11F3F00E4310F /* SequenceStrategy.swift */; };
+		FA93FDC326C11F9B00E4310F /* RandomSequenceStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDC226C11F9B00E4310F /* RandomSequenceStrategy.swift */; };
+		FA93FDC626C11FF500E4310F /* SequentiallyStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDC526C11FF500E4310F /* SequentiallyStrategy.swift */; };
+		FA93FDD726C176AA00E4310F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDD626C176AA00E4310F /* SettingsViewController.swift */; };
+		FA93FDDE26C176D000E4310F /* SettingsViewMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDDD26C176D000E4310F /* SettingsViewMaker.swift */; };
+		FA93FDE226C1849F00E4310F /* QuestionsCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDE126C1849F00E4310F /* QuestionsCaretaker.swift */; };
+		FA93FDFB26C25C5B00E4310F /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDFA26C25C5B00E4310F /* Observer.swift */; };
+		FA93FE0026C25D3100E4310F /* GameCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDFF26C25D3100E4310F /* GameCaretaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +56,7 @@
 		FA41D4B626BD01C70077319E /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		FA41D4BB26BD19A70077319E /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
 		FA41D4BF26BD1C420077319E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		FA41D4C426BD20EA0077319E /* ResultsCareTaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCareTaker.swift; sourceTree = "<group>"; };
+		FA41D4C426BD20EA0077319E /* ResultsCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCaretaker.swift; sourceTree = "<group>"; };
 		FA41D4D126BD66E10077319E /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
 		FA44EAE026BB9DA8009502FC /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA44EAE326BB9DA8009502FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,8 +75,7 @@
 		FA44EB2726BBB0F3009502FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA44EB2C26BBC044009502FC /* QuizGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGameButton.swift; sourceTree = "<group>"; };
 		FA44EB3226BBD956009502FC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		FA44EB3726BBDC52009502FC /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
-		FA44EB3B26BBE1CA009502FC /* GameSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSingleton.swift; sourceTree = "<group>"; };
+		FA44EB3B26BBE1CA009502FC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		FA44EB4326BBF288009502FC /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		FA8CF85026BE92D400319279 /* Кто хочет стать миллионером - Обдумывание.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Кто хочет стать миллионером - Обдумывание.mp3"; sourceTree = "<group>"; };
 		FA8CF85326BE933C00319279 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -78,6 +85,15 @@
 		FA8CF86326BFEBD300319279 /* QuizResultLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultLabel.swift; sourceTree = "<group>"; };
 		FA8CF86626BFF3C700319279 /* Кто хочет стать миллионером - начало.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Кто хочет стать миллионером - начало.mp3"; sourceTree = "<group>"; };
 		FA8CF86926BFF57F00319279 /* Кто хочет стать миллионером - конец.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Кто хочет стать миллионером - конец.mp3"; sourceTree = "<group>"; };
+		FA93FDBB26C11E6900E4310F /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		FA93FDBF26C11F3F00E4310F /* SequenceStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceStrategy.swift; sourceTree = "<group>"; };
+		FA93FDC226C11F9B00E4310F /* RandomSequenceStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSequenceStrategy.swift; sourceTree = "<group>"; };
+		FA93FDC526C11FF500E4310F /* SequentiallyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentiallyStrategy.swift; sourceTree = "<group>"; };
+		FA93FDD626C176AA00E4310F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FA93FDDD26C176D000E4310F /* SettingsViewMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewMaker.swift; sourceTree = "<group>"; };
+		FA93FDE126C1849F00E4310F /* QuestionsCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsCaretaker.swift; sourceTree = "<group>"; };
+		FA93FDFA26C25C5B00E4310F /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		FA93FDFF26C25D3100E4310F /* GameCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCaretaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +162,8 @@
 		FA44EAE226BB9DA8009502FC /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				FA93FDF926C25C4C00E4310F /* Observer */,
+				FA93FDBA26C11E5600E4310F /* Strategy */,
 				FA8CF84F26BE92B900319279 /* MusicPlayer */,
 				FA44EB3A26BBE1B6009502FC /* Services */,
 				FA44EB3126BBD93C009502FC /* Model */,
@@ -180,6 +198,7 @@
 		FA44EAFB26BBA0E6009502FC /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				FA93FDD526C1767600E4310F /* Settings */,
 				FA44EAFE26BBA123009502FC /* Main */,
 				FA44EB1926BBAB50009502FC /* Game */,
 				FA44EB4226BBF267009502FC /* Result */,
@@ -265,7 +284,6 @@
 		FA44EB1B26BBAB64009502FC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA44EB3726BBDC52009502FC /* QuestionViewModel.swift */,
 				FA44EB2326BBAF72009502FC /* GameViewMaker.swift */,
 			);
 			path = View;
@@ -298,9 +316,11 @@
 		FA44EB3A26BBE1B6009502FC /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				FA44EB3B26BBE1CA009502FC /* GameSingleton.swift */,
-				FA41D4C426BD20EA0077319E /* ResultsCareTaker.swift */,
+				FA44EB3B26BBE1CA009502FC /* Game.swift */,
 				FA41D4D126BD66E10077319E /* GameSession.swift */,
+				FA93FDFF26C25D3100E4310F /* GameCaretaker.swift */,
+				FA93FDE126C1849F00E4310F /* QuestionsCaretaker.swift */,
+				FA41D4C426BD20EA0077319E /* ResultsCaretaker.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -324,6 +344,50 @@
 				FA8CF85326BE933C00319279 /* Player.swift */,
 			);
 			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+		FA93FDBA26C11E5600E4310F /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				FA93FDBB26C11E6900E4310F /* Sequence.swift */,
+				FA93FDBF26C11F3F00E4310F /* SequenceStrategy.swift */,
+				FA93FDC226C11F9B00E4310F /* RandomSequenceStrategy.swift */,
+				FA93FDC526C11FF500E4310F /* SequentiallyStrategy.swift */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		FA93FDD526C1767600E4310F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FA93FDDC26C176BD00E4310F /* View */,
+				FA93FDDA26C176B700E4310F /* Controller */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FA93FDDA26C176B700E4310F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA93FDD626C176AA00E4310F /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA93FDDC26C176BD00E4310F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA93FDDD26C176D000E4310F /* SettingsViewMaker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA93FDF926C25C4C00E4310F /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				FA93FDFA26C25C5B00E4310F /* Observer.swift */,
+			);
+			path = Observer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,29 +509,37 @@
 				FA8CF85426BE933C00319279 /* Player.swift in Sources */,
 				FA44EB1326BBA810009502FC /* UIFont+Ext.swift in Sources */,
 				FA44EB4426BBF288009502FC /* ResultsTableViewController.swift in Sources */,
-				FA44EB3C26BBE1CA009502FC /* GameSingleton.swift in Sources */,
+				FA44EB3C26BBE1CA009502FC /* Game.swift in Sources */,
 				FA44EB2826BBB0F3009502FC /* Constants.swift in Sources */,
 				FA41D4D226BD66E10077319E /* GameSession.swift in Sources */,
 				FA44EB2426BBAF72009502FC /* GameViewMaker.swift in Sources */,
-				FA41D4C526BD20EA0077319E /* ResultsCareTaker.swift in Sources */,
+				FA93FDC326C11F9B00E4310F /* RandomSequenceStrategy.swift in Sources */,
+				FA41D4C526BD20EA0077319E /* ResultsCaretaker.swift in Sources */,
 				FA44EAE826BB9DA8009502FC /* MainViewController.swift in Sources */,
 				FA8CF86126BFE81800319279 /* QuizImageView.swift in Sources */,
 				FA41D4C026BD1C420077319E /* Result.swift in Sources */,
+				FA93FDBC26C11E6900E4310F /* Sequence.swift in Sources */,
 				FA41D4BC26BD19A70077319E /* ResultsTableViewCell.swift in Sources */,
+				FA93FDDE26C176D000E4310F /* SettingsViewMaker.swift in Sources */,
 				FA8CF86426BFEBD300319279 /* QuizResultLabel.swift in Sources */,
 				FA44EB0E26BBA73A009502FC /* QuizButton.swift in Sources */,
-				FA44EB3826BBDC52009502FC /* QuestionViewModel.swift in Sources */,
+				FA93FDE226C1849F00E4310F /* QuestionsCaretaker.swift in Sources */,
+				FA93FDC626C11FF500E4310F /* SequentiallyStrategy.swift in Sources */,
 				FA41D4B726BD01C70077319E /* UIViewController+Ext.swift in Sources */,
 				FA44EAE426BB9DA8009502FC /* AppDelegate.swift in Sources */,
+				FA93FDD726C176AA00E4310F /* SettingsViewController.swift in Sources */,
+				FA93FDFB26C25C5B00E4310F /* Observer.swift in Sources */,
 				FA44EB1D26BBABBB009502FC /* GameViewController.swift in Sources */,
 				FA8CF85E26BFE4BC00319279 /* QuizTextField.swift in Sources */,
 				FA44EB1726BBA9FD009502FC /* QuizStackView.swift in Sources */,
+				FA93FE0026C25D3100E4310F /* GameCaretaker.swift in Sources */,
 				FA8CF85B26BFE42000319279 /* QuizLabel.swift in Sources */,
 				FA44EB3326BBD956009502FC /* Question.swift in Sources */,
 				FA44EB0526BBA17B009502FC /* MainViewMaker.swift in Sources */,
 				FA44EB2D26BBC044009502FC /* QuizGameButton.swift in Sources */,
 				FA44EB2126BBACA8009502FC /* UIButton+Animation.swift in Sources */,
 				FA44EAE626BB9DA8009502FC /* SceneDelegate.swift in Sources */,
+				FA93FDC026C11F3F00E4310F /* SequenceStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

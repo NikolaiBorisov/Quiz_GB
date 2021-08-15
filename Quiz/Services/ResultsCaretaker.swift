@@ -7,11 +7,7 @@
 
 import Foundation
 
-final class ResultsCareTaker {
-    
-    enum Keys: String {
-        case result = "result"
-    }
+final class ResultsCaretaker {
     
     static let encoder = JSONEncoder()
     static let decoder = JSONDecoder()
@@ -19,14 +15,14 @@ final class ResultsCareTaker {
     static func save(results: [Result]) {
         do {
             let data = try self.encoder.encode(results)
-            UserDefaults.standard.setValue(data, forKey: Keys.result.rawValue)
+            UserDefaults.standard.setValue(data, forKey: Constants.Keys.result.rawValue)
         } catch {
             print(error)
         }
     }
     
     static func retrieveResults() -> [Result] {
-        guard let data = UserDefaults.standard.data(forKey: Keys.result.rawValue) else {
+        guard let data = UserDefaults.standard.data(forKey: Constants.Keys.result.rawValue) else {
             return []
         }
         do {
@@ -38,7 +34,7 @@ final class ResultsCareTaker {
     }
     
     static func delete(row: Int) {
-        guard var data = UserDefaults.standard.data(forKey: Keys.result.rawValue) else { return }
+        guard var data = UserDefaults.standard.data(forKey: Constants.Keys.result.rawValue) else { return }
         data.remove(at: row)
     }
     

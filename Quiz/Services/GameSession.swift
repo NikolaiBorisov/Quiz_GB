@@ -7,20 +7,25 @@
 
 import Foundation
 
-class GameSession {
-    private(set) var answerTotal: Int
-    private(set) var correctAnswersTotal: Int
+class GameSession: Codable {
+    var countQuestion: Int
+    var countAnswers: Int
     private(set) var isFiftyFiftyAvailable: Bool
     private(set) var isFriendCallAvailable: Bool
     private(set) var isAudienceHelpAvailable: Bool
     
-    init() {
-        answerTotal = .zero
-        correctAnswersTotal = .zero
+    init(countQuestion: Int, countAnswers: Int) {
+        self.countQuestion = countQuestion
+        self.countAnswers = countAnswers
         isFiftyFiftyAvailable = true
         isFriendCallAvailable = true
         isAudienceHelpAvailable = true
     }
+    
+    convenience init() {
+        self.init(countQuestion: 0, countAnswers: 0)
+    }
+    
 }
 
 extension GameSession: GameViewControllerDelegate {
@@ -37,11 +42,11 @@ extension GameSession: GameViewControllerDelegate {
     }
     
     func correctAnswer() {
-        correctAnswersTotal += 1
+        countAnswers += 1
     }
     
     func getNumberOfCurrentGame() -> Int {
-        correctAnswersTotal
+        0
     }
     
 }
