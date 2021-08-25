@@ -15,12 +15,6 @@ enum Constants {
         static let backButtonImage = UIImage(systemName: "chevron.left")
     }
     
-    enum URL {
-        static let gameMusicURL = Bundle.main.url(forResource: "Кто хочет стать миллионером - Обдумывание", withExtension: "mp3")
-        static let beginningMusicURL = Bundle.main.url(forResource: "Кто хочет стать миллионером - начало", withExtension: "mp3")
-        static let endMusicURL = Bundle.main.url(forResource: "Кто хочет стать миллионером - конец", withExtension: "mp3")
-    }
-    
     enum Placeholder {
         static let userNameTF = "Enter your name"
     }

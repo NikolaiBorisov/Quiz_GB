@@ -17,7 +17,7 @@ final class ResultsTableViewController: UITableViewController {
     }
     
     private func playMusic() {
-    guard let url = Constants.URL.endMusicURL else { return }
+        let url = URL.endMusicURL
         Player.shared.playSoundOn(vc: url)
     }
     
